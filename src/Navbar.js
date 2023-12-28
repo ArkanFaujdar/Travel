@@ -22,8 +22,9 @@ function Navbar() {
         {nav && (
           <ul>
             <li className="p-4 border-b-2 ">Home</li>
-            <li className="p-4 border-b-2">Products</li>
-            <li className="p-4 border-b-2">Contact</li>
+            <li className="p-4 border-b-2">Packages</li>
+            <li className="p-4 border-b-2">Contact US</li>
+            <li className="p-4 border-b-2">Book</li>
             <li className="p-4 border-b-2">About</li>
           </ul>
         )}
