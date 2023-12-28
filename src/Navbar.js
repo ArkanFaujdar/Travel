@@ -15,7 +15,7 @@ function Navbar() {
       </div>
 
       <div>
-        <div className="sticky flex justify-between items-center border-b-[1px] h-[12vh] px-4 mb-0 md:hidden ">
+        <div className="sticky flex justify-between items-center border-b-[1px] h-[11vh] px-4 mb-0 md:hidden ">
           <h1 className="m-0 text-2xl font-bold">Travel.</h1>
           <div onClick={() => setNav((nav) => !nav)}>{nav ? "x" : "="}</div>
         </div>
