@@ -28,7 +28,7 @@ export default function Contact() {
       </div>
 
       <motion.div
-        className="m-auto grid grid-col-2 w-[60%]"
+        className="m-auto grid grid-col-2 w-[80%] md:w-[60%]"
         initial={{ x: 200 }}
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}

@@ -12,7 +12,6 @@ function Pack({ country, img, type }) {
     target: targetRef,
     offset: ["start end", "end start"],
   });
-
   const x = useTransform(
     scrollYProgress,
     [0, 0.2],
@@ -21,14 +20,15 @@ function Pack({ country, img, type }) {
 
   return (
     <motion.div
-      className="h-[70vh] mb-5 grid grid-cols-2"
+      className="h-[90vh] md:h-[70vh] md:mb-5 grid md:grid-cols-2"
       style={{ x }}
       ref={targetRef}
     >
-      <img src={img} className="h-[65vh] w-[100%]" alt="maldives" />
-      <div className="p-3 my-auto pb-11 px-[45px]">
+      <img src={img} className="h-[40vh] md:h-[65vh] w-[100%]" alt="maldives" />
+
+      <div className="p-3 md:my-auto md:pb-11 md:px-[45px]">
         <h1 className="text-[35px] font-bold text-gray-500">{country}</h1>
-        <p className="text-[20px]">
+        <p className="text-[15px] sm:text-[17px] md:text-[20px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -38,7 +38,7 @@ function Pack({ country, img, type }) {
           culpa qui officia deserunt mollit anim id est laborum
         </p>
 
-        <motion.button className="mt-8 py-4 px-11 text-[18px] rounded-xl bg-slate-200">
+        <motion.button className="mt-8 py-2 md:py-4 px-11 text-[18px] rounded-xl bg-slate-200">
           Check Out
         </motion.button>
       </div>
@@ -48,9 +48,9 @@ function Pack({ country, img, type }) {
 
 function Packs() {
   return (
-    <motion.div className="mt-6 relative h-[320vh] mb-11 p-10 max-w-screen overflow-hidden">
+    <motion.div className="mt-6 relative mb-11 p-10 max-w-screen overflow-hidden">
       <motion.h1
-        className="text-center mb-11 mx-auto text-[35px] font-bold"
+        className="text-center mb-11 mx-auto text-[25px] lg:text-[35px] font-bold"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
       >
